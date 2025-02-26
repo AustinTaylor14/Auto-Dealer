@@ -1,0 +1,18 @@
+/* Example: Desktop Breakpoint ~992px or 1024px */
+@media (min-width: 992px) {
+    .hero {
+      height: 500px;
+      .hero-overlay {
+        left: 2rem;
+        bottom: 2rem;
+        h1 {
+          font-size: 2rem;
+        }
+      }
+    }
+  
+    .services .service-cards {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  

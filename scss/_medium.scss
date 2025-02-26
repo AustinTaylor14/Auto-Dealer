@@ -1,0 +1,20 @@
+/* Example: Tablet Breakpoint ~600px or 768px */
+@media (min-width: 600px) {
+    .hero {
+      height: 350px;
+    }
+  
+    .nav .nav-links {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+    .nav .nav-toggle {
+      display: none; /* Hide hamburger on medium+ screens */
+    }
+  
+    .services .service-cards {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  

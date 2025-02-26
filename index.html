@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Retro Rides</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap">
+
+  <!-- Normalize CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+
+  <!-- Compiled CSS from SCSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <link rel="icon" href="images/favicon.ico" type="images/x-icon"/>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-top">
+      <img 
+        src="images/logo1x.png" 
+        alt="Retro Rides Logo"
+        class="logo"
+      />
+      <a href="tel:+18005556789" class="phone-number">1-800-555-6789</a>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="nav">
+      <button class="nav-toggle" aria-label="Toggle Menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Inventory</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" style="background-image: url(images/hero.jpg);">
+    <div class="hero-overlay">
+      <h1>Welcome to Retro Rides</h1>
+      <p>Classic Cars, Modern Service</p>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- SERVICES -->
+    <section class="services">
+      <h2>Service</h2>
+      <p>Regular service is one of the most important aspects of owning a classic vehicle, ensuring peak performance and longevity. Check out what we offer below.</p>
+
+      <div class="service-cards">
+
+        <article class="service-card">
+          <img src="images/car-sport-outline.svg" alt="Tire Alignment Icon" />
+          <h3>Tire Alignment</h3>
+          <p>Stay safe and smooth on the road with expert tire alignment.</p>
+          <button>LEARN MORE</button>
+        </article>
+
+        <article class="service-card">
+          <img src="images/build-outline.svg" alt="Brake Service Icon" />
+          <h3>Brakes</h3>
+          <p>We’ll inspect and replace brake pads, rotors, and fluids as needed.</p>
+          <button>LEARN MORE</button>
+        </article>
+
+        <article class="service-card">
+          <img src="images/thermometer-outline.svg" alt="Coolant System Icon" />
+          <h3>Coolant</h3>
+          <p>Proper coolant levels help prevent overheating in older engines.</p>
+          <button>LEARN MORE</button>
+        </article>
+
+        <article class="service-card">
+          <img src="images/construct-outline.svg" alt="Engine Oil Icon" />
+          <h3>Engine Oil</h3>
+          <p>Keep your vintage car purring with regular oil checks and changes.</p>
+          <button>LEARN MORE</button>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CUSTOMER REVIEWS (LOADED VIA JSON) -->
+  
+      <section class="reviews">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-wrapper">
+      
+          <!-- Testimonial 1 -->
+          <div class="testimonial">
+            <h3>Randall Boggs</h3>
+            <p>
+              "I am so grateful that the service is so reliable. I required extensive
+              work on my car and they delivered excellent results. Highly recommended!"
+            </p>
+          </div>
+      
+          <!-- Testimonial 2 -->
+          <div class="testimonial">
+            <h3>Carl Fredricksen</h3>
+            <p>
+              "Great service, as usual. A friendly staff, a quick turn-around, and
+              a stress-free experience. Thankful and impressed with the quality of work."
+            </p>
+          </div>
+      
+          <!-- Testimonial 3 -->
+          <div class="testimonial">
+            <h3>Road Runner</h3>
+            <p>
+              "We at Coyote Enterprises are used to a variety of unexpected
+              road hazards. Vintage Vehicles keeps us on the move—beep beep!"
+            </p>
+          </div>
+      
+          <!-- Testimonial 4 -->
+          <div class="testimonial">
+            <h3>Minerva Mouse</h3>
+            <p>
+              "My car was not able to drive at all, but Davey and Louie changed
+              the transmission fluid, and now it runs like new! Thanks so much!"
+            </p>
+          </div>
+      
+        </div>
+      </section>
+      
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      &copy; <span id="year"></span> &bull; 2025-Austin Taylor
+    </p>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/scripts.js" type=" module"></script>
+</body>
+</html>
