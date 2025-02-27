@@ -34,6 +34,9 @@ html, body {
     background-color: $primary-color;
     color: $secondary-color;
     position: relative;
+    ul{
+      overflow: hidden;
+    }
     .nav-toggle {
       background: none;
       border: none;
@@ -115,7 +118,9 @@ html, body {
       img {
         width: 60px;
         margin-bottom: 0.5rem;
+        position: relative;
       }
+      
       button {
         background-color: $primary-color;
         color: $secondary-color;
@@ -128,7 +133,34 @@ html, body {
       }
     }
   }
-  
+
+  .spin:hover img {animation: mySpin 1s 1;}
+  .pulse:hover img {animation: myPulse 1s 1;}
+  .bounce:hover img {animation: myBounce 1s 1;}
+
+    @keyframes myBounce{
+  0% {bottom:0px; animation-timing-function:ease-out;}
+  25% {bottom:15px; animation-timing-function:ease-in;}
+  50% {bottom:0px; animation-timing-function:ease-out;}
+  75% {bottom:7px; animation-timing-function:ease-in;}
+  100% {bottom:0px; animation-timing-function:ease-out;}
+    }
+
+    @keyframes mySpin {
+      from {transform: rotate(odeg);}
+      to {transform: rotate(360deg);}
+    }
+
+    @keyframes myPulse {
+      0% {transform: scale(1.0);}
+      25% {transform: scale(1.5);}
+      50% {transform: scale(.75);}
+      75% {transform: scale(1.25);}
+      100% {transform: scale(1.0);}
+    }
+
+   
+
   /* REVIEWS */
   .reviews {
     max-width: 1200px;

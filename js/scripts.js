@@ -1,14 +1,16 @@
-import {reviews} from '../reviews.js';
-console.log(reviews);
+import {reviews} from '../data/reviews.js';
 
 // Display current year in footer
 document.getElementById("year").textContent = new Date().getFullYear();
 
 // Mobile Nav Toggle
 const navToggle = document.querySelector(".nav-toggle");
+console.log(navToggle)
 const navLinks = document.querySelector(".nav-links");
+console.log(navLinks)
 
 navToggle.addEventListener("click", () => {
+  console.log('2')
   navLinks.classList.toggle("open");
 });
 
