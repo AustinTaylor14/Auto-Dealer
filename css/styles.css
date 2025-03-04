@@ -362,8 +362,8 @@ html, body {
   text-decoration: none;
   color: #ffffff;
 }
-.nav .nav-links li a:hover {
-  background-color: #160d08;
+.nav .nav-links .home {
+  background-color: black;
 }
 
 /* HERO */
