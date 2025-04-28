@@ -1,4 +1,4 @@
-import {reviews} from '../data/reviews.js';
+
 
 // Display current year in footer
 document.getElementById("year").textContent = new Date().getFullYear();
@@ -6,19 +6,33 @@ document.getElementById("year").textContent = new Date().getFullYear();
 // Mobile Nav Toggle
 const navToggle = document.querySelector(".nav-toggle");
 console.log(navToggle)
-const navLinks = document.querySelector(".nav-links");
-console.log(navLinks)
+const navLinksContainer = document.querySelector(".nav-links");
+console.log(navLinksContainer)
 
 navToggle.addEventListener("click", () => {
   console.log('2')
-  navLinks.classList.toggle("open");
+  navLinksContainer.classList.toggle("open");
 });
 
+// Get the current URL path
+const currentPath = window.location.pathname;
+
+// Select all navigation links
+const navLinks = document.querySelectorAll('.nav-links a');
+
+// Loop through links and add the active class to the matching link
+navLinks.forEach(link => {
+  if (link.getAttribute('href') === currentPath) {
+    link.classList.add('active');
+  }
+});
+
+import {reviews} from '../data/reviews.js';
+console.log("hello")
+console.log(reviews)
+
 // Fetch and Display Reviews from JSON
-fetch("./data/reviews.json")
-  .then((response) => response.json())
-  .then((reviews) => {
-    const container = document.getElementById("reviews-container");
+const container = document.getElementById("reviews-container");
 
     reviews.forEach((review) => {
       // Create a div for each review
@@ -39,7 +53,5 @@ fetch("./data/reviews.json")
 
       container.appendChild(reviewDiv);
     });
-  })
-  .catch((error) => {
-    console.error("Error fetching reviews:", error);
-  });
+  
+  

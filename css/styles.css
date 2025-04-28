@@ -303,7 +303,8 @@ template {
 /* A warm, vintage brown */
 /* Subtle gold/brown accent */
 /* Base + Mobile (small) styles */
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   font-family: "Crimson Text", serif;
@@ -356,16 +357,21 @@ html, body {
 .nav .nav-links.open {
   display: block;
 }
-.nav .nav-links li a {
+.nav .active {
+  font-weight: bold;
+  background-color: black;
+  color: #3c2415;
+  background-color: #88512f;
+}
+.nav li a {
   display: block;
   padding: 0.75rem 1rem;
   text-decoration: none;
   color: #ffffff;
 }
-.nav .nav-links .home {
-  background-color: black;
-}
 
+/*close my nav tag*/
+/* Add hover effect for navigation links */
 /* HERO */
 .hero {
   position: relative;
